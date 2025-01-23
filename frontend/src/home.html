@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            font-size: 18px;
+            color: #fff;
+            background: #ff7eb3;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            outline: none;
+            box-shadow: 0 5px 15px rgba(255, 126, 179, 0.4);
+        }
+
+        .btn:hover {
+            background: #ff477e;
+            box-shadow: 0 10px 20px rgba(255, 71, 126, 0.5);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Presione el botón para consultar los datos de facturación</h1>
+        <button class="btn" id="button_query" >Consultar</button>
+    </div>
+
+    <table class="data">
+        <caption> <h3 class="data" id="tableCaption">  </h3> </caption>
+        <thead>
+          <tr id="tableTitles"></tr>
+        </thead>
+
+        <tbody id="facturacion_table"></tbody>
+      </table>
+    </div>
+
+
+    <script src="../static/home.js"></script>
+</body>
+</html>
